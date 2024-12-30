@@ -1,0 +1,4 @@
+Space shooter  Game  Updates  are below :
+Add  new  type of enemy shielded    or power  ful  Enemy type
+Powersups   tempory , healtboost,speed boost left  right power ful shield 35 Secs invisbility 45secs , 
+Fine tune  Game  Bug free  smoothness .

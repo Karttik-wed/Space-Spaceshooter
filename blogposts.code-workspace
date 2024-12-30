@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../New folder (4)/game dev/imp44/space-infornation/blogposts"
+		},
+		{
+			"path": "../New folder (4)/game dev/imp44/space-infornation/images"
+		},
+		{
+			"path": "../New folder (4)/game dev/imp44/space-infornation/scripts"
+		},
+		{
+			"path": "../New folder (4)/game dev/imp44/space-infornation/styles"
+		}
+	],
+	"settings": {
+		"compile-hero.disable-compile-files-on-did-save-code": false
+	}
+}
