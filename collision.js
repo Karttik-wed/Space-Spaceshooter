@@ -68,7 +68,7 @@ function detectCollisions() {
 
   // Preload the collision sound
   const collisionSound = new Audio("collision-sound.mp3");
-  collisionSound.volume = 0.2; // Set the volume to full (equivalent to 10 on a 0-10 scale)
+  collisionSound.volume = 0.2; // Set the volume to 20%
 
   for (let i = 0; i < enemies.length; i++) {
     // Check for collision with the player
@@ -90,9 +90,12 @@ function detectCollisions() {
         // player.isFrozen = false; // Unfreeze the player after 5 seconds
         // }, 5000);
       } else if (enemies[i].color === "white") {
-        damage = 4; // White enemies deal 1 damage
+        damage = 4; // White enemies deal 4 damage
       } else if (enemies[i].color === "silver") {
-        damage = 6; // Silver enemies deal 2 damage
+        damage = 6; // Silver enemies deal 6 damage
+      } else if (enemies[i].color === "orange") {
+        damage = 5; // Orange enemies deal 5 damage
+        // Additional effect for explosive orange enemy can be added here if needed
       } else {
         // Regular enemies have random chance for a critical hit
         const critChance = Math.random() * 100; // Random number between 0 and 100
@@ -135,10 +138,10 @@ function detectCollisions() {
       const enemy = enemies[i];
       const distance = Math.sqrt(
         Math.pow(player.x + player.width / 2 - (enemy.x + enemy.width / 2), 2) +
-        Math.pow(
-          player.y + player.height / 2 - (enemy.y + enemy.height / 2),
-          2
-        )
+          Math.pow(
+            player.y + player.height / 2 - (enemy.y + enemy.height / 2),
+            2
+          )
       );
 
       if (distance <= bombEffectRadius) {
